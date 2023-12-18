@@ -1,0 +1,289 @@
+@import url(imports.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    height: auto;
+    position: relative;
+}
+
+main {
+    background: url(../imagens//imagens_arquitetos/background-fundo5.png);
+    background-size: cover;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hearder-main {
+    background: url(../arquivos/inspireSe.png);
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h2 {
+    height: 3.8rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.8em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--quaseBranco);
+
+    text-shadow: 0px 0px 130px var(--laranja);
+
+    border-bottom: 5px solid var(--laranja);
+}
+
+.projetos {
+    background-size: cover;
+    width: 95%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.projetos a {
+    max-height: 305px;
+    text-decoration: none;
+    color: transparent;
+
+    margin: 5vh 5px;
+}
+
+.exemplo-projetos {
+    background-size: cover;
+    width: 450px;
+    height: 280px;
+
+    border: 5px solid rgba(36, 36, 36, 0.747);
+    transition: 0.5s all;
+
+    position: relative;
+}
+
+.exemplo-projetos:hover {
+    width: 540px;
+    height: 305px;
+
+    border: 3px solid black;
+    color: white;
+
+    transition: 1s all;
+}
+
+.conteudo-projetos {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+
+    transition: 0.3 all;
+
+    position: relative;
+}
+
+.conteudo-projetos:hover{
+    background-color: rgba(0, 0, 0, 0.663);
+    z-index: 5;
+
+    transition: 0.5s all;
+}
+
+.conteudo-projetos h1 {
+    width: 350px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+
+    transition: 0.3s;
+
+    padding-left: 80px;
+    padding-top: 50px;
+}
+
+.conteudo-projetos h1:hover {
+    transform: translateX(22px);
+    transition: 1s all;
+}
+
+.conteudo-projetos h2 {
+    width: 140px;
+    font-family: sans-serif;
+    font-size: 0.8em;
+
+    transition: 0.3s;
+
+    padding-left: 80px;
+    padding-top: 5px;
+}
+
+.conteudo-projetos h2:hover {
+    transform: translateX(22px);
+    transition: 1s all;
+}
+
+.ver-projeto {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+
+    position: absolute;
+    right: 3%;
+    bottom: 4%;
+
+    opacity: 0;
+}
+
+.conteudo-projetos .ver-projeto:hover {
+    color: rgb(180, 180, 180);
+    transition: 0.3s;
+
+    font-size: 1.04em;
+}
+
+.ver-projeto__seta {
+    width: 13px;
+    color: white;
+}
+
+.conteudo-projetos .ver-projeto:hover .ver-projeto__seta {
+    width: 14px;
+}
+
+.conteudo-projetos:hover .ver-projeto {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+
+.projeto1 {
+    background: url(../arquivos/proj1_Img1.jpg);
+    background-size: cover;
+}
+
+.projeto2 {
+    background: url(../arquivos/Proj2_Img1.jpg);
+    background-size: cover;
+}
+
+.projeto3 {
+    background: url(../arquivos/Proj3_Img1.jpg);
+    background-size: cover;
+}
+
+.projeto4 {
+    background: url(../arquivos/Proj4_Img1.jpg);
+    background-size: cover;
+}
+
+.projeto5 {
+    background: url(../arquivos/Proj5_Img1.jpg);
+    background-size: cover;
+}
+
+.projeto6 {
+    background: url(../arquivos/Proj6_Img1.jpg);
+    background-size: cover;
+}
+
+.projeto7 {
+    background: url(../arquivos/Proj7_Img11.jpg);
+    background-size: cover;
+}
+
+.projeto8 {
+    background: url(../arquivos/Proj8_Img1.jpg);
+    background-size: cover;
+}
+
+.projeto9 {
+    background: url(../arquivos/Proj9_Img6.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 1680px) {
+
+    .exemplo-projetos {
+        background-size: cover;
+        width: 390px;
+        height: 250px;
+    
+        border: 5px solid rgba(36, 36, 36, 0.747);
+        transition: 0.5s all;
+    
+        position: relative;
+    }
+    
+    .exemplo-projetos:hover {
+        width: 430px;
+        height: 275px;
+    
+        border: 3px solid black;
+        color: white;
+    
+        transition: 1s all;
+    }
+
+    .conteudo-projetos h1 {
+        width: 300px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.39em;
+    
+        transition: 0.3s;
+    
+        padding-left: 60px;
+        padding-top: 50px;
+    }
+    
+    .conteudo-projetos h1:hover {
+        transform: translateX(22px);
+        transition: 1s all;
+    }
+    
+    .conteudo-projetos h2 {
+        width: 140px;
+        font-family: sans-serif;
+        font-size: 0.69em;
+    
+        transition: 0.3s;
+    
+        padding-left: 60px;
+        padding-top: 5px;
+    }
+    
+    .conteudo-projetos h2:hover {
+        transform: translateX(22px);
+        transition: 1s all;
+    }
+}
+    
+
+@media screen and (max-height: 800px) {
+
+    .div-icone {
+        margin-left: -6%;
+    }
+}
+
+
+

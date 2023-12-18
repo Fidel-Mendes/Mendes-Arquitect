@@ -1,0 +1,30 @@
+
+.menu {
+    display: flex;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    position: relative;
+    padding: 0 10px;
+}
+
+.link-menu:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    height: 2px;
+    width: 0;
+    left: 5px;
+    bottom: -10px;
+    transition: 0.3s;
+
+    border-radius: 1px;
+}
+
+.link-menu:hover::after {
+    width: 90%;
+}

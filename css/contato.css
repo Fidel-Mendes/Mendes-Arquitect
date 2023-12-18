@@ -1,0 +1,418 @@
+@import url(imports.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../imagens/imagens_contato/background5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+main {
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato {
+    width: 80%;
+    display: flex; 
+    justify-content: center;
+}
+
+.left {
+    background: rgba(0, 0, 0, 0.278);
+    width: 45%;
+    height: 70vh;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.left h1 {
+    color: white;
+    font-size: 6em;
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right: 1%;
+}
+
+.left hr {
+    background: #6f709e;
+    width: 16%;
+    height: 1.8%;
+
+    border: none;
+    margin-left: 10%;
+}
+
+.left h2 {
+    color: var(--quaseBranco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+
+    margin-top: 10%;
+    margin-right: 20px;
+    padding: 0 5% 0 10%;
+}
+
+.contatos {
+    margin-top: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contatos img {
+    width: 15px;
+    height: 15px;
+    padding-top: -5px;
+}
+
+.contatos h3 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    padding-left: 10%;
+}
+
+.right{
+    background-color: var(--quaseBranco);
+    width: 40%;
+    height: 70vh;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right h2 {
+    height: 1vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    margin: 30px;
+    /* text-shadow: 1px 1px #8b4513; */
+}
+
+/* Formulário */
+form {
+    /* background: blue; */
+    width: 86%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder {
+    color: black;
+    font-size: 1em;
+}
+
+.form-names {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0 0 0;
+}
+
+.first-name {
+    background: transparent;
+    width: 96%;
+    height: 70px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+}
+
+.form-select {
+    width: 96%;
+}
+
+.form-select span {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+}
+
+.tipo-arquitetura {
+    background: transparent;
+    width: 100%;
+    height: 70px;
+
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-bottom: 1px solid black;
+
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tipo-arquitetura option {
+    background: rgb(218, 218, 218);
+}
+
+.form-email {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.email {
+    background: transparent;
+    width: 96%;
+    height: 70px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.first-name:hover, .second-name:hover, .email:hover {
+    box-shadow: 0.5px 0.5px 2px black;
+}
+
+/* .first-name:hover::placeholder, 
+.second-name:hover::placeholder,  
+.email:hover::placeholder {
+    color: black;
+} */
+
+.first-name, .second-name, .email{
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+form div.form-message {
+    width: 96%;
+}
+
+.message {
+    background: transparent;
+    width: 100%;
+
+    border: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border-radius: 2px;
+
+    padding: 10px 0 0 10px;
+    margin-top: 10px;
+
+    max-width: 100%;
+    max-height: 140px;
+    min-width: 100%;
+    min-height: 120px;
+}
+
+.message::placeholder {
+    color: black;
+}
+
+.message:hover {
+    box-shadow: 0.5px 0.5px 2px black;
+}
+
+form div.form-buttom {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.buttom {
+    background: url(../imagens/imagens_contato/background3.jpg);
+    width: 120px;
+    height: 50px;
+
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 2px;
+
+}
+
+.buttom:hover {
+    box-shadow: 0.5px 0.5px 2px black;
+    background-color: #af6631;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 1650px) {
+
+    .contato {
+        width: 82%;
+        height: 72vh;
+    }
+
+    .left h1 {
+        font-size: 5.2em;
+    }
+
+    .right h2 {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+
+    .contato {
+        width: 82%;
+        height: 72vh;
+    }
+
+    .left h1 {
+        font-size: 4.5em;
+    }
+
+    .left h2 {
+        font-size: 1.7em;
+    }
+
+    .contatos h3 {
+        font-size: 0.9em;
+    }
+
+    .right h2 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-height: 830px) {
+
+    form {
+        height: 80%;
+    }
+    
+    .form-names {
+        height: 90px;
+    }
+
+    .form-email {
+        height: 90px;
+    }
+
+    .tipo-arquitetura {
+        height: 60px;
+    
+        margin-top: 6px;
+    }
+
+    .message {
+        margin-top: 8px;
+    
+        max-height: 120px;
+        min-height: 100px;
+    }
+
+    .buttom {
+        width: 102px;
+        height: 50px;
+    
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-height: 780px) {
+
+    form {
+        height: 82%;
+    }
+    
+    .form-names {
+        height: 90px;
+    }
+
+    .form-email {
+        height: 90px;
+    }
+
+    input::placeholder {
+        font-size: 0.9em;
+    }
+
+    .tipo-arquitetura {
+        height: 60px;
+    
+        margin-top: 6px;
+    }
+
+    .message {
+        margin-top: 8px;
+    
+        max-height: 120px;
+        min-height: 100px;
+    }
+
+    .buttom {
+        width: 98px;
+        height: 46px;
+    
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+
+    form {
+        height: 81%;
+    }
+    
+    .form-names {
+        height: 80px;
+    }
+
+    .form-email {
+        height: 86px;
+    }
+
+    input::placeholder {
+        font-size: 0.9em;
+    }
+
+    .tipo-arquitetura {
+        height: 55px;
+    
+        margin-top: 6px;
+    }
+
+    .message {
+        margin-top: 8px;
+    
+        max-height: 110px;
+        min-height: 90px;
+    }
+
+    .buttom {
+        width: 98px;
+        height: 46px;
+    
+        margin-bottom: 10px;
+    }
+}
+

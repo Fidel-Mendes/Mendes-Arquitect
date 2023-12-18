@@ -1,0 +1,33 @@
+#picture__input{
+    display: none;
+}
+
+.picture{
+    width: 400px;
+    /* height: 230px; */
+    aspect-ratio: 16/9;
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccd;
+    border: 2px dashed currentColor;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+   
+}
+
+.picture:hover{
+    color: white;
+    background: rgb(83, 83, 83);
+}
+
+.picture:active{
+    border-color: rgb(158, 157, 157);
+    /* background: rgb(86, 86, 255); */
+}
+
+.picture__img{
+    max-width: 100%;
+}

@@ -1,0 +1,358 @@
+@import url(imports.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    position: relative;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-header {
+    /* background-color: rgba(0, 0, 0, 0.808); */
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.main-header img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-main-header {
+    background: url(../imagens/imagens_arquitetos/background-arquitetos-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2000px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.img-main-header h2 {
+    height: 3.8rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.8em;
+    letter-spacing: 2px;
+    color: white;
+
+    border-bottom: 5px solid rgba(228, 126, 31, 0.8);
+
+    text-shadow: 0px 0px 100px rgba(228, 126, 31, 0.4);
+
+    margin-right: 20px;
+    z-index: 999;
+}
+
+.arquitetos {
+    background: url(../imagens/imagens_arquitetos/background-fundo5.png);
+    background-size: cover;
+    height: auto;
+    width: 100%;
+
+    padding-top: 5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-arquitetos {
+    background-color: white;
+    width: 800px;
+    height: 300px;
+
+    box-shadow: 0px 0px 3px black;
+    border-radius: 8px;
+
+    text-decoration: none;
+    color: black;
+
+    transition: 0.7s all;
+
+    margin-top: 7vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-arquitetos:last-child {
+    margin-bottom: 7vh;
+}
+
+.card-arquitetos:hover {
+    background-color: rgb(250,250,250);
+    width: 860px;
+    height: 335px;
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.89);
+
+    transition: 1s all;
+}
+
+.img-arquitetos {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid black;
+
+    transition: 0.5s all;
+}
+
+.img-arquitetos:hover {
+    width: 120px;
+    height: 120px;
+
+    transition: 0.7s all;
+}
+
+.nome-tipo h2 {
+    font-family: cursive;
+    font-size: 1.5em;
+}
+
+.especialidade {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-exemplo {
+    width: auto;
+    max-width: 355px;
+    height: 225px;
+
+    transition: 0.4s all;
+
+    border-radius: 2px;
+}
+
+.img-exemplo:hover {
+    max-width: 440px;
+    height: 270px;
+    transition: 0.7s all;
+}
+
+
+.see-more {
+    position: fixed;
+    left: 48.4%;
+    bottom: 40px;
+    cursor: pointer;
+
+    animation: jumping 1s linear infinite;
+}
+
+@keyframes jumping {
+    from {transform: translateY(-15px);}
+    50% {transform: translateY(0);}
+    to {transform: translateY(-15px);}
+}
+
+.div-icone {
+    margin-left: -25%;
+    display: none;
+}
+
+@media screen and (max-width: 1650px) {
+
+    .img-main-header h2 {
+        font-size: 3.5em;
+    }
+
+    .card-arquitetos {
+        width: 700px;
+        height: 270px;
+    
+        transition: 0.7s all;
+    }
+    .card-arquitetos:hover {
+        background-color: rgb(250,250,250);
+        width: 720px;
+        height: 290px;
+    
+        transition: 1s all;
+    }
+
+    .nome-tipo h2 {
+        font-family: cursive;
+        font-size: 1.4em;
+    }
+
+    .especialidade {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9em;
+    }
+
+    .img-exemplo {
+        width: auto;
+        max-width: 270px;
+        height: 180px;
+    }
+
+    .img-exemplo:hover {
+        width: auto;
+        max-width: 320px;
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+
+
+    .card-arquitetos {
+        width: 660px;
+        height: 250px;
+    
+        transition: 0.7s all;
+    }
+    .card-arquitetos:hover {
+        background-color: rgb(250,250,250);
+        width: 680px;
+        height: 270px;
+    
+        transition: 1s all;
+    }
+
+    .nome-tipo h2 {
+        font-family: cursive;
+        font-size: 1.36em;
+    }
+
+    .especialidade {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.85em;
+    }
+
+    .img-exemplo {
+        width: auto;
+        max-width: 270px;
+        height: 180px;
+    }
+
+    .img-exemplo:hover {
+        width: auto;
+        max-width: 320px;
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+
+    .img-main-header h2 {
+        font-size: 3.3em;
+    }
+
+    .card-arquitetos {
+        width: 630px;
+        height: 230px;
+    
+        transition: 0.7s all;
+    }
+    .card-arquitetos:hover {
+        background-color: rgb(250,250,250);
+        width: 660px;
+        height: 250px;
+    
+        transition: 1s all;
+    }
+
+    .nome-tipo h2 {
+        font-family: cursive;
+        font-size: 1.3em;
+    }
+
+    .especialidade {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.85em;
+    }
+
+    .img-exemplo {
+        width: auto;
+        max-width: 270px;
+        height: 175px;
+    }
+
+    .img-exemplo:hover {
+        width: auto;
+        max-width: 320px;
+        height: 210px;
+    }
+
+    .img-arquitetos {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .img-arquitetos:hover {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+
+    .img-main-header h2 {
+        font-size: 3.3em;
+    }
+
+    .card-arquitetos {
+        width: 610px;
+        height: 210px;
+    
+        transition: 0.7s all;
+    }
+    .card-arquitetos:hover {
+        background-color: rgb(250,250,250);
+        width: 630px;
+        height: 220px;
+    
+        transition: 1s all;
+    }
+
+    .nome-tipo h2 {
+        font-family: cursive;
+        font-size: 1.3em;
+    }
+
+    .especialidade {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.85em;
+    }
+
+    .img-exemplo {
+        width: auto;
+        max-width: 270px;
+        height: 175px;
+    }
+
+    .img-exemplo:hover {
+        width: auto;
+        max-width: 320px;
+        height: 210px;
+    }
+
+    .img-arquitetos {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .img-arquitetos:hover {
+        width: 100px;
+        height: 100px;
+    }
+}

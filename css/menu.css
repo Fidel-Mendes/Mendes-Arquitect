@@ -1,0 +1,151 @@
+@import url(imports.css);
+
+.menu {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: fixed; */
+    z-index: 5;
+    background-color: rgb(29, 29, 29);
+    position: fixed;
+    top: 0;
+}
+
+.logo-home {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-home h2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+.menu nav a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+    margin-right: 0;
+}
+
+.menu nav a:first-child{
+    margin-left: 0;
+}
+
+.div-icone {
+    margin-left: -15%;
+}
+
+@media screen and (max-height: 950px) {
+
+    .logo-home {
+        font-size: 30px;
+    }
+
+    .menu nav a {
+        font-size: 1.1em;
+    }
+
+    .menu nav a {
+        margin-left: 8px;
+    }
+
+    .icone-perfil > img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+
+    .logo-home {
+        font-size: 25px;
+    }
+
+    .menu nav a {
+        font-size: 1em;
+    }
+
+    .menu nav a {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+
+    .div-icone {
+        margin-left: -6%;
+    }
+    
+    .icone-perfil > img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+
+    .div-icone {
+        margin-left: 0;
+    }
+    
+    .icone-perfil > img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+
+
+
+
+
+/* Erros */
+
+.erro-sucefull-cadastro {
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+
+    border-radius: 3px;
+    border: 1px solid green;
+
+    margin-top: 2vh;
+    padding: 10px;
+}
+
+.erro-login_senha {
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+
+    border-radius: 3px;
+    border: 1px solid red;
+
+    margin-top: 2vh;
+    padding: 10px;
+}
+
+.erros {
+    display: flex;
+    justify-content: center;
+}
+
+.erro {
+    width: auto;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+
+    border-radius: 3px;
+    border: 1px solid red;
+
+    margin-top: 1vh;
+    padding: 10px;
+}

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import "./utilidades/cores.css";
+
+
+body {
+    height: auto;
+    position: relative;
+    margin: 0px;
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.linha {
+  width: 300px;
+  height: 1px;
+}
+input[type="date"]{
+    background-color: rgb(206, 206, 206);
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 580px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: rgb(206, 206, 206);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.titulo2 {
+  
+  margin: 0;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+.font-1-xxlcor-0{ 
+ font-size: 2em;
+ font-family: 'Bebas Neue', cursive;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form .col-2 {
+    grid-column: span 1;
+  }
+  .form .col-3 {
+    grid-column: span 2;
+  }
+  .form .col-1 {
+    grid-column: span 3;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 4px;
+    font: 500 1rem/1.5 "Poppins", sans-serif;
+  }
+  
+  .form input[type="password"],
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    background: rgb(206, 206, 206);
+    border: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  .form input[type="text"]:focus,
+  .form input[type="email"]:focus,
+  .form textarea:focus {
+    outline: none;
+    border-color: black;
+    background: rgb(202, 200, 200);
+    box-shadow: 0 0 0 2px rgb(0, 0, 0);
+  }
+
+  .cadastro-arquitetos {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+
+    transition: 0.5s all;
+
+    position: absolute;
+    top: 16vh;
+    right: 2%;
+  }
+
+  .cadastro-arquitetos:hover {
+    font-size: 1.1em;
+    transition: 0.7s all;
+  }
+
+  footer {
+    margin-bottom: -8vh;
+  }
+  
+  @media (max-width: 600px) {
+    .form {
+      grid-template-columns: 1fr;
+    }
+    .form .col-2 {
+      grid-column: 1;
+    }
+  }
+
+  .botao {
+    position: relative;
+    padding: 16px 32px;
+    background: linear-gradient(#c7c7c7, #50504f);
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    text-transform: uppercase;
+    font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    max-width: max-content;
+    border: none;
+    cursor: pointer;
+    left: 1029px;
+}
+
+#select_est {
+  background: rgb(202, 200, 200);
+  width: 100%;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+#select_est option {
+background-color: white;
+}
